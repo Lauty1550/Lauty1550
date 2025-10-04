@@ -73,6 +73,3 @@
 </p>
 
 ---
-
-[lauty1550](https://github.com/lauty1550)  
-_Última edición: 04/10/2025_
