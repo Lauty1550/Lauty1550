@@ -1,8 +1,8 @@
-name: "Generar Snake"
+name: "Generar Snake GIF"
 
 on:
   schedule:
-    - cron: "0 0 * * *" 
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,14 +13,19 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v2
 
-      - name: Generar animación Snake
+      - name: Generar animación Snake en GIF
         uses: Platane/snk@v3
         with:
           github_user_name: Lauty1550
-          outputs: ./output/github-contribution-grid-snake.svg
+          outputs: ./output/github-contribution-grid-snake.gif
+          args: --gif 
 
       - name: Commit y push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Actualizar animación Snake"
-          file_pattern: output/github-contribution-grid-snake.svg
+          commit_message: "Actualizar animación Snake GIF"
+          file_pattern: output/github-contribution-grid-snake.gif
+          branch: main
+          author_name: Lauty1550
+          author_email: lauty1550@users.noreply.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}
