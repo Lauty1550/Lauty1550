@@ -1,6 +1,14 @@
 <p align="center">
-  <!-- Optional banner goes here -->
+  <a href="https://lautarojaime.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/-Mi%20portafolio-blue?style=for-the-badge&logo=react" alt="Portfolio" />
+  </a>
 </p>
+
+
+
+
+
+
 
 <div>
 
@@ -49,14 +57,6 @@
 
 [![FloorPlanJS](https://github-readme-stats.vercel.app/api/pin/?username=Lauty1550&repo=FloorPlanJS&theme=transparent)](https://github.com/Lauty1550/FloorPlanJS)  
 [![KaiserCalc](https://github-readme-stats.vercel.app/api/pin/?username=Lauty1550&repo=KaiserCalc&theme=transparent)](https://github.com/Lauty1550/KaiserCalc)
-
----
-
-<!-- <h2> // Contribuciones 🐍 </h2>
-
-<div align="center">
-  ![Animación Snake](https://raw.githubusercontent.com/Lauty1550/Lauty1550/main/output/github-contribution-grid-snake.svg)
-</div> -->
 
 ---
 
