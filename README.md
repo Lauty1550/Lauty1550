@@ -52,11 +52,11 @@
 
 ---
 
-<h2> // Contribuciones 🐍 </h2>
+<!-- <h2> // Contribuciones 🐍 </h2>
 
 <div align="center">
   ![Animación Snake](https://raw.githubusercontent.com/Lauty1550/Lauty1550/main/output/github-contribution-grid-snake.svg)
-</div>
+</div> -->
 
 ---
 
