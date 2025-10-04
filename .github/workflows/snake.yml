@@ -1,26 +1,26 @@
-name: "GitHub Contribution Snake"
+name: "Generar Snake"
 
 on:
   schedule:
-    - cron: "0 0 * * *"  
-  workflow_dispatch:
+    - cron: "0 0 * * *"  #
+  workflow_dispatch:      
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Clonar repositorio
         uses: actions/checkout@v2
 
-      - name: Generate snake contribution graph
-        uses: aizatto/gh-contribution-grid-snake@v1.2.0
+      - name: Generar animación Snake
+        uses: Platane/snk@v3
         with:
-          username: Lauty1550
+          github_user_name: Lauty1550
           output: ./output/github-contribution-grid-snake.svg
 
-      - name: Commit and push
+      - name: Hacer commit y push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "chore: update snake"
+          commit_message: "Actualizar animación Snake"
           file_pattern: output/github-contribution-grid-snake.svg
