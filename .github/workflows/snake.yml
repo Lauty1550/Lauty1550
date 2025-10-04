@@ -1,0 +1,26 @@
+name: "GitHub Contribution Snake"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Generate snake contribution graph
+        uses: aizatto/gh-contribution-grid-snake@v1.2.0
+        with:
+          username: Lauty1550
+          output: ./output/github-contribution-grid-snake.svg
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: update snake"
+          file_pattern: output/github-contribution-grid-snake.svg
